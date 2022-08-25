@@ -9,5 +9,22 @@
 <body>
     <h1>JSON</h1>
     <h2>javascript object notation</h2>
+    <script>
+        const user = {id: 255,
+             name:"Masud",
+             lover:{
+                name:"jamila",
+                favFood:"pizza",
+             },
+             friendsAge:[12,23,45], 
+             friends:["salam", "jamal", "kamal"]
+
+            };
+        const userJSON = JSON.stringify(user);
+        console.log(userJSON);
+
+        const userFromJSON = JSON.parse(userJSON);
+        console.log(userFromJSON);
+    </script>
 </body>
 </html>
